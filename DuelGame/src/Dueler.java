@@ -1,4 +1,4 @@
-import duel.Dueler;
+
 
 public interface Dueler 
 {
