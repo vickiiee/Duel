@@ -7,8 +7,6 @@ public class Duel {
 	private int dueler2HP = 30;
 	
 	
-	
-	
 	public static void main(String[] args){
 		Duel duel = new Duel();
 		duel.dukeItOut();
@@ -25,16 +23,15 @@ public class Duel {
 		System.out.print(" vs ");
 		pause(600);
 		System.out.println(d2.getName());
-		pause(600);
-		d1.taunt();
-		pause(2000);
-		d2.taunt();
-		pause(2000);
-		d1.setStartingHP(dueler1HP);
-		d2.setStartingHP(dueler2HP);
+//		pause(600);
+//		d1.taunt();
+//		pause(2000);
+//		d2.taunt();
+//		pause(2000);
+//		d1.setStartingHP(dueler1HP);
+//		d2.setStartingHP(dueler2HP);
 		
 		
-
 		
 	}
 	
