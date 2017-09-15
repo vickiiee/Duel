@@ -2,6 +2,7 @@
 public class CharacterA implements Dueler 
 {
 	private String name;
+	private int hp;
 	
 	public CharacterA () {}
 	
@@ -13,6 +14,9 @@ public class CharacterA implements Dueler
 		return name;
 	}
 	
-	int getHP() {}
+	public int getHP() {
+		
+		return hp;
+	}
 }
 
