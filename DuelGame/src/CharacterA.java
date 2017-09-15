@@ -14,6 +14,11 @@ public class CharacterA implements Dueler
 		return name;
 	}
 	
+	public void setStartHP(int h) {
+		
+		System.out.println(h);
+	}
+	
 	public int getHP() {
 		
 		return hp;
