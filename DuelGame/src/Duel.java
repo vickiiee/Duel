@@ -23,7 +23,7 @@ public class Duel {
 		System.out.print(" vs ");
 		pause(600);
 		System.out.println(d2.getName());
-//		pause(600);
+		pause(600);
 //		d1.taunt();
 //		pause(2000);
 //		d2.taunt();
