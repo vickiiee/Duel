@@ -8,11 +8,11 @@ public class CharacterB implements Dueler
 	
 	public void taunt()
 	{
-		String [] taunts = {"","",""};
-		for (i = 0; i < 10; i++)
+		/*String [] taunts = {"","",""};
+		for (i = 0; i < taunts.length; i++)
 		{
-			return //index of array
-		}
+			return String
+		}*/
 	}
 	
 	public String getName()
@@ -23,12 +23,12 @@ public class CharacterB implements Dueler
 	
 	public void setStartingHP(int hp)
 	{
-		
+		this.hp-=10;
 	}
 	
 	public int getHP()
 	{
-		
+		return hp;
 	}
 
 	
