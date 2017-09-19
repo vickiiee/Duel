@@ -6,7 +6,7 @@ public class CharacterB implements Dueler
 	
 	public CharacterB () {}
 	
-	public void taunt()
+	public void  taunt()
 	{
 		/*String [] taunts = {"","",""};
 		for (i = 0; i < taunts.length; i++)
