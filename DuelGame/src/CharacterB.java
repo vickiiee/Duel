@@ -3,16 +3,13 @@ public class CharacterB implements Dueler
 {
 	private String name;
 	private int hp;
+	private String[] taunt = {"Who'll win? I'LL WIN!!"};
 	
 	public CharacterB () {}
 	
 	public void  taunt()
 	{
-		/*String [] taunts = {"","",""};
-		for (i = 0; i < taunts.length; i++)
-		{
-			return String
-		}*/
+		System.out.println(taunt[1]);
 	}
 	
 	public String getName()
@@ -23,7 +20,7 @@ public class CharacterB implements Dueler
 	
 	public void setStartingHP(int hp)
 	{
-		this.hp-=10;
+		this.hp = hp;
 	}
 	
 	public int getHP()
