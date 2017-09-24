@@ -9,7 +9,7 @@ public class CharacterB implements Dueler
 	
 	public void  taunt()
 	{
-		System.out.println(taunt[1]);
+		System.out.println(taunt[0]);
 	}
 	
 	public String getName()

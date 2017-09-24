@@ -24,12 +24,12 @@ public class Duel {
 		pause(600);
 		System.out.println(d2.getName());
 		pause(600);
-//		d1.taunt();
-//		pause(2000);
-//		d2.taunt();
-//		pause(2000);
-//		d1.setStartingHP(dueler1HP);
-//		d2.setStartingHP(dueler2HP);
+		d1.taunt();
+		pause(2000);
+		d2.taunt();
+		pause(2000);
+		d1.setStartingHP(dueler1HP);
+		d2.setStartingHP(dueler2HP);
 		
 		
 		
