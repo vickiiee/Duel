@@ -3,10 +3,15 @@ public class CharacterA implements Dueler
 {
 	private String name;
 	private int hp;
+	private String[] taunt = {"You don't stand a chance!"};
+
 	
 	public CharacterA () {}
 	
-	public void taunt() {}
+	public void taunt() {
+		
+		System.out.println(taunt[0]);
+	}
 	
 	public String getName()
 	{
