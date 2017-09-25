@@ -4,7 +4,7 @@ public class CharacterA implements Dueler
 	private String name;
 	private int hp;
 	private String[] taunt = {"You don't stand a chance!" , "I'm going to beat you", "Hahaha you're going to lose"};
-
+	private boolean loadedGun;
 	
 	public CharacterA () {}
 	
@@ -35,9 +35,34 @@ public class CharacterA implements Dueler
 		{
 			return true;
 		}
-		
+		else 
+		{
+			return false;
+		}
 	}
 	
+	public int getAction(Object caller)
+	{
+		if(caller instanceof Duel)
+		{
+		
+			
+			if(loadedGun == true && Math.random() < .5) {
+				loadedGun = false;
+				return Duel.SHOOTING;
+			}
+			
+			if(!loadedGun && Math.random() < .5) {
+				
+				loadedGun = true;
+				return Duel.LOADING;
+			}
+		}
+		
+		else {
+			return Duel.YEAH_RIGHT;
+		}
+	}
 	
 	
 }
