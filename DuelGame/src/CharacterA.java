@@ -21,13 +21,17 @@ public class CharacterA implements Dueler
 	
 	public void setStartingHP(int h) {
 		
-		hp = 100;
-		return hp;
+		System.out.println(h);
 	}
 	
 	public int getHP() {
 		
 		return hp;
+	}
+	
+	public boolean determineIfOpponentIsFair(Dueler d, int target) {
+		
+		
 	}
 }
 
