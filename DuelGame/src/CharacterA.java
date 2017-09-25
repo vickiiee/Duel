@@ -3,7 +3,7 @@ public class CharacterA implements Dueler
 {
 	private String name;
 	private int hp;
-	private String[] taunt = {"You don't stand a chance!"};
+	private String[] taunt = {"You don't stand a chance!" , "I'm going to beat you", "Hahaha you're going to lose"};
 
 	
 	public CharacterA () {}
@@ -30,11 +30,14 @@ public class CharacterA implements Dueler
 	}
 	
 	public boolean determineIfOpponentIsFair(Dueler d, int target) {
-		if (d.getHP == hp)
+		if (d.getHP() == hp)
 		{
 			return true;
 		}
 		
 	}
+	
+	
+	
 }
 
