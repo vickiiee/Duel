@@ -3,13 +3,14 @@ public class CharacterB implements Dueler
 {
 	private String name;
 	private int hp;
-	private String[] taunt = {"Who'll win? I'LL WIN!!"};
+	private String[] taunt = {"The champion is here!!!", "Who'll win? I'LL WIN!!", "Hahahahahahahahahaaaaa, Do you really think you'll be the winner"};
 	
 	public CharacterB () {}
 	
 	public void  taunt()
 	{
-		System.out.println(taunt[0]);
+		int randNum = (int)(Math.random()*2)+1;
+		System.out.println(taunt[randNum]);
 	}
 	
 	public String getName()
