@@ -48,6 +48,7 @@ public class CharacterA implements Dueler
 		
 			
 			if(loadedGun == true && Math.random() < .5) {
+				
 				loadedGun = false;
 				return Duel.SHOOTING;
 			}
@@ -56,6 +57,10 @@ public class CharacterA implements Dueler
 				
 				loadedGun = true;
 				return Duel.LOADING;
+			}
+			else
+			{
+				return Duel.GUARDING;
 			}
 		}
 		
