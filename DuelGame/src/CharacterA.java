@@ -10,7 +10,8 @@ public class CharacterA implements Dueler
 	
 	public void taunt() {
 		
-		System.out.println(taunt[0]);
+		int randNum = (int)(Math.random()*2)+1;
+		System.out.println(taunt[randNum]);
 	}
 	
 	public String getName()
