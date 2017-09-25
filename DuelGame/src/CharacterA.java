@@ -21,7 +21,8 @@ public class CharacterA implements Dueler
 	
 	public void setStartingHP(int h) {
 		
-		System.out.println(100);
+		hp = 100;
+		return hp;
 	}
 	
 	public int getHP() {
