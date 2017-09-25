@@ -31,7 +31,7 @@ public class CharacterA implements Dueler
 	}
 	
 	public boolean determineIfOpponentIsFair(Dueler d, int target) {
-		if (d.getHP() == hp)
+		if (d.getHP() == target)
 		{
 			return true;
 		}
@@ -46,13 +46,13 @@ public class CharacterA implements Dueler
 		if(caller instanceof Duel)
 		{
 		
-			
 			if(loadedGun == true && Math.random() < .5) {
 				
 				loadedGun = false;
 				return Duel.SHOOTING;
 			}
 			
+			else {
 			if(!loadedGun && Math.random() < .5) {
 				
 				loadedGun = true;
@@ -62,13 +62,21 @@ public class CharacterA implements Dueler
 			{
 				return Duel.GUARDING;
 			}
-		}
+			}
 		
-		else {
-			return Duel.YEAH_RIGHT;
 		}
+			else {
+				
+				return Duel.YEAH_RIGHT;
+			}
+	
 	}
 	
-	
+	public void hit(Object caller) {
+		if (caller instanceof Duel)
+		{
+			hp -= 10;
+	}
+	}
 }
 
