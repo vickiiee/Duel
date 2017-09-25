@@ -4,6 +4,7 @@ public class CharacterB implements Dueler
 	private String name;
 	private int hp;
 	private String[] taunt = {"The champion is here!!!", "Who'll win? I'LL WIN!!", "Hahahahahahahahahaaaaa, Do you really think you'll be the winner"};
+	private boolean loadedGun;
 	
 	public CharacterB () {}
 	
