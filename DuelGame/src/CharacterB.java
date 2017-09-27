@@ -4,8 +4,12 @@ public class CharacterB implements Dueler
 	private String name;
 	private int hp;
 	private String[] taunt = {"The champion is here!!!", "Who'll win? I'LL WIN!!", "Hahahahahahahahahaaaaa, Do you really think you'll be the winner"};
+	private boolean loadedGun;
 	
-	public CharacterB () {}
+	public CharacterB () 
+	{
+		loadedGun = false;
+	}
 	
 	public void taunt()
 	{
@@ -21,7 +25,7 @@ public class CharacterB implements Dueler
 	
 	public void setStartingHP(int hp)
 	{
-		System.out.println(hp);
+		this.hp = hp;
 	}
 	
 	public int getHP()
@@ -29,12 +33,12 @@ public class CharacterB implements Dueler
 		return this.hp;
 	}
 
-
 	public boolean determineIfOpponentIsFair(Dueler d, int target) {
 		if (d.getHP() == target)
 		{
 			return true;
-		} else
+		} 
+		else
 		{
 			return false;
 		}
@@ -44,29 +48,36 @@ public class CharacterB implements Dueler
 	{
 		if(caller instanceof Duel)
 		{
-		
-			
-			if(loadedGun == true && Math.random() < .5) {
-				
+			if(loadedGun == true && Math.random() < .5) 
+			{
 				loadedGun = false;
 				return Duel.SHOOTING;
 			}
-			
-			if(!loadedGun && Math.random() < .5) {
-				
-				loadedGun = true;
-				return Duel.LOADING;
-			}
-			else
+			else 
 			{
-				return Duel.GUARDING;
+				if(!loadedGun && Math.random() < .4) 
+				{
+					loadedGun = true;
+					return Duel.LOADING;
+				}
+				
+				else
+				{
+					return Duel.GUARDING;
+				}
 			}
 		}
-		
-		else {
+		else 
+		{
 			return Duel.YEAH_RIGHT;
 		}
 	}
 	
-	
+	public void hit(Object caller)
+	{
+		if(caller instanceof Duel)
+		{
+			this.hp = this.hp - 10;
+		}
+	}
 }
