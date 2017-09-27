@@ -33,8 +33,8 @@ public class CharacterA implements Dueler
 		return this.hp;
 	}
 
-	public boolean determineIfOpponentIsFair(Dueler d, int hp) {
-		if (d.getHP() == hp)
+	public boolean determineIfOpponentIsFair(Dueler d, int target) {
+		if (d.getHP() == target)
 		{
 			return true;
 		} 
